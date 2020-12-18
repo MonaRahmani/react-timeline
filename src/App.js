@@ -12,10 +12,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Application title</h1>
+        <h1 className="App-title">{timelineData.person}'s social media feed</h1>
       </header>
       <main className="App-main">
-        <TimelineEvent person="Adele Goldberg" status="In Smalltalk" timeStamp="2018-05-18T22:12:03Z"/>
+        <Timeline events={timelineData.events}/>
       </main>
     </div>
   );
